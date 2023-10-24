@@ -1,0 +1,73 @@
+<div class="container-fluid">
+    <section class="container">
+        <div class="row header">
+            <div class="col-sm-12 title-row text-center">
+                <h1>CONTINUE NA FACULDADE DA <span>NOSSA GERAÇÃO</span></h1>
+            </div>
+        </div>
+
+        <div class="row form-row">
+            <div class="col-md-6 d-flex align-items-center">
+                <div>
+                    <h1>PÓS <span class="descomplica-color">DESCOMPLICA</span></h1>
+                    <h2>OFERTA DE CONCLUSÃO DE CURSO</h2>
+                    <p>Parabéns, você concluiu a sua <span class="descomplica-color">PÓS GRADUAÇÃO DESCOMPLICA!</span></p>
+                    <p>É hora de dar o próximo passo na sua carreira.</p>
+                    <p>Temos uma oferta especial para você, aluno <span class="descomplica-color">DESCOMPLICA</span>, seguir estudando conosco.</p>
+                    <br/>
+                    <p class="descomplica-color">QUER SABER MAIS?</p>
+                    <p>Deixe os seus dados e entraremos em contato!</p>
+                </div>
+            </div>
+            <div class="col-md-6 section-form">
+                <form (submit)="onSubmit()" #leadForm="ngForm">
+                    <div class="form-group">
+                        <input type="text" id="leadName" class="form-control" placeholder="Nome" required
+                        [(ngModel)]="model.leadName" name="leadName"
+                        #leadName="ngModel"
+                        />
+                        <div [hidden]="leadName.valid || leadName.untouched" class="alert alert-danger">Seu nome é obrigatório</div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="leadEmail" class="form-control" placeholder="Seu melhor e-mail" required
+                        email="true"
+                        [(ngModel)]="model.leadEmail" name="leadEmail"
+                        #leadEmail="ngModel"
+                        />
+                        <div [hidden]="leadEmail.valid || leadEmail.untouched" class="alert alert-danger">Você se esqueceu de digitar o seu melhor e-mail</div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="leadPhone" class="form-control" placeholder="Telefone" required
+                        mask='(00) 0000-0000 || (00) 00000-0000'
+                        [(ngModel)]="model.leadPhone" name="leadPhone"
+                        #leadPhone="ngModel"
+                        />
+                        <div [hidden]="leadPhone.valid || leadPhone.untouched" class="alert alert-danger">Seu telefone é importante para nós</div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="checkbox" id="privacy" required
+                        [(ngModel)]="privacy" name="privacy"
+                        (change)="changePrivacy()"
+                        />
+                        <span class="privacy">Concordo com o tratamento dos meus dados para finalidade de marketing, publicidade e divulgação de serviços da Descomplica, suas parceiras, contato e cumprimento de     obrigações legais e contratuais, nos termos política de privacidade.</span>
+                    </div>
+                    
+
+                    <button type="submit" class="btn btn-success" [disabled]="!leadForm.form.valid">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer class="footer">
+    <small>Todos os direitos reservados - Descomplica 2023 &nbsp;&nbsp;&nbsp;|</small>
+    <img src="https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/small-descomplica-icon.svg" alt="Descomplica">
+    <img alt="Facebook" src="https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/fb-icon.svg" tabindex="0">
+    <img alt="Twitter" src="https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/twitter-icon.svg" tabindex="0">
+    <img alt="Youtube" src="https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/youtube-icon.svg" tabindex="0">
+    <img alt="Instagram" src="https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/instagram-icon.svg" tabindex="0">
+</footer>

@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed");
+
+* {
+    color: #fff;
+    font-family: 'Barlow Condensed';
+}
+
+.privacy {
+    font-size: 0.7rem;
+    margin-left: 5px !important;
+}
+
+h1, h2, .title-row {
+    font-family: 'Bebas Neue' !important;
+    color: #ffffff;
+    letter-spacing: -0.9px;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+.header {
+    padding: 40px;
+}
+
+.section-form {
+    padding: 10px 100px;
+}
+
+h1 {
+    margin-bottom: -10px;
+    font-size: 4rem;
+    margin-top: 30px;
+}
+
+h2 {
+    padding-top: 0px;
+}
+
+p {
+    color: #ffffff;
+    font-family: "Oswald";
+    font-size: 1.25rem;
+}
+
+p:first-of-type {
+    font-size: 1.5rem;
+    margin-bottom: -3px;
+}
+
+p:nth-of-type(4) {
+    margin-top: 40px;
+    margin-bottom: -5px;
+}
+
+/*Cor de font verde descomplica*/
+.descomplica-color, .title-row span {
+    color: #00e88f !important;
+    font-weight: bold;
+}
+
+.title-row h1{
+    font-size: 55px;
+}
+
+.container-fluid, .form-row, .col-md-6 {
+    height: 100%;
+}
+
+.container {
+    margin-bottom: 40px;
+}
+
+input[type=text] {
+    background-color: rgb(25 26 26);
+    padding: 10px;
+    font-size: 1.3rem;
+    border-color: #686868;
+    margin: 30px 0;
+    color: #c9c9c9;
+}
+
+
+
+::placeholder {
+    color: #c9c9c9;
+    opacity: 10; /* Firefox */
+}
+
+button {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+img {
+    padding: 10px 10px;
+}
+
+.alert-danger {
+    color: #272727;
+    margin-top: -20px;
+}
